@@ -1,0 +1,7 @@
+# Ignore configuration Netbeans folders and files.
+nbproject/
+
+# Ignore certain directories with unwanted content.
+ud_exercises/e1
+**/archive
+**/img

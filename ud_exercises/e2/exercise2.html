@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Exercise 2 - Form</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+
+<body>
+
+<div class="mainContainer">
+    <div class="leftContainer">
+
+	<h2>Please sign up on our guest list</h2>
+
+	<form method="post" action="exercise2_thankyou.php">
+	    <p>
+		First Name:<span class="required">*</span><br />
+		<input type="text" name="firstname" size="30">
+	    </p>
+
+	    <p>
+		Last Name:<span class="required">*</span><br />
+		<input type="text" name="lastname" size="30">
+	    </p>
+
+	    <p>
+		Contact Information:<span class="required">*</span>
+		<input type="radio" name="contactchoice" value="Phone"> Phone
+		<input type="radio" name="contactchoice" value="Email"> Email <br />
+		<input type="text" name="phoneormemail" size="50">
+	    </p>
+
+	    <p>
+		City Where You Want to Reside:<span class="required">*</span><br />
+		<select name="city" size="1">
+			<option selected disabled>Please select one</option>
+			<option value="Chicago">Chicago</option>
+			<option value="Detroit">Detroit</option>
+			<option value="Toronto">Toronto</option>
+		</select>
+	    </p>
+
+	    <p>
+		Comments:<br />
+		<textarea name="comments" cols="40" rows="5"></textarea>
+	    </p>
+
+	    <p>
+		<input type="submit" value="Submit Information">
+	    </p>
+
+	</form>
+    </div><!-- .leftContainer -->
+
+    <div class="rightContainer">
+	<form method="post" action="exercise2_mortgage.php">
+	    <h2>Mortgage Calculator</h2>
+	    <p>
+		<span class="fieldLabel">Home Price: (&#163;)<span class="required">*</span></span>
+		<input type="text" name="homeprice" size="30">
+	    </p>
+
+	    <p>
+		<span class="fieldLabel">Interest Rate: (%)<span class="required">*</span></span>
+		<input type="text" name="interestrate" size="30">
+	    </p>
+	    <p>
+		<span class="fieldLabel">Down payment: (&#163;)<span class="required">*</span></span>
+		<input type="text" name="downpayment" size="30">
+	    </p>	    
+	    <p>
+		<span class="fieldLabel">Loan term: (number of years)<span class="required">*</span></span>
+		<input type="text" name="loanterm" size="30">
+	    </p>	    
+	    <p>
+		<input type="submit" value="Calculate Payment">
+	    </p>
+	</form>
+    </div><!-- .rightContainer -->
+</div><!-- .mainContainer -->
+</body>
+</html>

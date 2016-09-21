@@ -1,0 +1,109 @@
+html {margin:0; padding:0;}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	background-color: #fff;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #49661a;
+}
+
+p {
+	font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #49661a;
+}
+
+a:hover {
+    color: #ab9d29;
+}
+
+input {
+	font-size: 16px;
+}
+
+select {
+	font-size: 16px;
+}
+
+textarea {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.textblue {
+	color: blue;
+}
+
+.textdisabled {
+	background-color: lightgray;
+}
+
+.assignDescription, .mortgageresults, .providedInfo {
+	border-top: 2px solid #9cbe7d;
+	border-bottom: 2px solid #9cbe7d;
+	margin-bottom: 1em;
+	padding: .8em;
+	background-color: #d8e5c0;
+}
+
+.mainContainer {
+    width: 100%;
+    margin-top: 1em;
+    vertical-align: top;
+}
+
+.leftContainer, .rightContainer {
+    display: inline-block;
+    width: 47%;
+    margin-bottom: 1em;
+    padding: .8em;
+    background-color: #d8e5c0;
+    vertical-align: top;
+    min-height: 474px;
+}
+
+.leftContainer {
+    margin-right: 1em;
+}
+
+.providedInfo {
+    margin-top: 1em;
+}
+
+.fieldLabel {
+   min-width: 214px;
+   display: inline-block;
+}
+
+.fieldLabel.infoProv {
+    min-width: 150px;
+}
+
+.fieldLabel.infoProv.interCalc,
+.fieldLabel.mortgageRes {
+    min-width: 280px;
+}
+
+.interimCalc {
+    margin-top: 1em;
+    border-top: 2px solid #96937b;
+}
+
+img, a {
+    border: none;
+}
+
+.errormsg, .required {
+    color: red;
+}
+
+.additionalInfo {
+    color: #6c6c6c;
+}
